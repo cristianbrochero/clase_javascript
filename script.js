@@ -14,16 +14,16 @@ alert('mundo');*/
 let a = 5;
 let b = 6;
 let suma =a + b;
-console.log ("El resultado de la suma es: ", suma);
+//console.log ("El resultado de la suma es: ", suma);
 b=7;
-console.log(b);
+//console.log(b);
 
 let nombre = "Cristian";
 let nombre2 = nombre;
 
 nombre2 = "carlos";
-console.log("el nombre uno es ", nombre);
-console.log("el nombre dos es ", nombre2);
+//console.log("el nombre uno es ", nombre);
+//console.log("el nombre dos es ", nombre2);
 
 // variables con camel case
 nombreUno = "Cristian";
@@ -59,18 +59,18 @@ n=12.523;
 
 // infinity: representa el infinito matematico. Es un valor especial que es mayor que cualquier numnero
 
-console.log(1 / 0);
-console.log(Infinity);
+//console.log(1 / 0);
+//console.log(Infinity);
 
 
 //NaN: representa un error de calculo.
 // Es el resultado de una operacion matematica incorrecta o ndefinida
 
-console.log("no es un numero" / 2);
+//console.log("no es un numero" / 2);
 
 //Nan: Cualquier operacion sobre NaN se devuelve NaN
 
-console.log("no es un numero" / 2 + 5);
+//console.log("no es un numero" / 2 + 5);
 
 //tipo de dato (BigInt)
 
@@ -85,12 +85,12 @@ let texto = "hola";
 let texto_dos = 'hola';
 let texto_tres = ``; //backticks funcionalidad extendida
 let nomb = "cristian";
-console.log("hola" + nomb);
+/*console.log("hola" + nomb);
 console.log("hola", nomb)
 
 console.log("hola ${nomb}");
 console.log('hola ${nomb}');
-console.log(`hola ${nomb}`);
+console.log(`hola ${nomb}`);*/
 
 //tipo de dato (Booleano)
 
@@ -105,7 +105,7 @@ let mayor =4 > 1; //true
 //Forma un tipo ptropio separado que contiene solo el valor null
 
 let edad = null;
-console.log(edad);
+//console.log(edad);
 // en JS null NO significa un objeto no existente
 //Es solo un valor especial que representa nada, vacio o valor desconocido.
 
@@ -113,12 +113,11 @@ console.log(edad);
 // Es un valor especial que no pertenece a ningun tipo de dato anterior.
 // el sig de underfined es valor no asignado
 
-let edda_dos;
-
+//let edda_dos;
 
 
 //tipo de dato (operador tyeof). devuelve el tipo de dato
-console.log(typeof undefined);// underfined
+/*console.log(typeof undefined);// underfined
 console.log(typeof 0);//number
 console.log(typeof true);//boolean
 console.log(typeof 10n);//biginit
@@ -126,4 +125,56 @@ console.log(typeof "hola");//string
 
 console.log(typeof(alert));// funcion
 console.log(typeof(null));//object -    ERROR DE JAVASCRIPT
-console.log(typeof(Math));//object
+console.log(typeof(Math));//object*/
+
+
+// Interacciones: alert, prompt, confirm
+
+let nombre_capturado = prompt('Digite el nombre', 'hola');
+//alert(nombre_capturado);
+
+//prompt('digite el nombre');
+//prompt('digite el nombre', '');//solo para IE
+
+//confirm
+let esHelado = confirm('¿te gusta el helado?');
+//console.log(esHelado);// true si presiona OK y false si presiona CANCELAR
+
+// converciones de tipos
+
+//existen dos tipos de converciones explicita e implicita
+
+//convertir a String
+
+let valor = true;
+console.log(typeof valor);
+
+valor = String(valor);
+valor = String(false);
+valor = String(null);
+valor = String(undefined);
+console.log(valor);
+console.log(typeof valor);
+
+//convertir a numero
+//las conversiones numericas ocurren auitomaticamente en funciones matematicas y expreciones
+
+alert('6' / '2');//3
+let num_cad = Number(cadena);//123
+
+console.log(Number('hola')); //NaN
+
+/*
+underfined -> NaN
+null -> 0
+true -> 1
+false -> 0
+string ''-> 0
+string 'hola' -> NaN
+*/
+
+//convertir a boleano
+console.log(Boolean("hola"));
+
+
+
