@@ -162,7 +162,7 @@ console.log(typeof valor);
 alert('6' / '2');//3
 let num_cad = Number(cadena);//123
 
-console.log(Number('hola')); //NaN
+//console.log(Number('hola')); //NaN
 
 /*
 underfined -> NaN
@@ -175,6 +175,97 @@ string 'hola' -> NaN
 
 //convertir a boleano
 console.log(Boolean("hola"));
+/*
+underfined -> false
+null -> false
+string ''-> false
+NaN -> salse
+0->false
+'0' -> true
+*/
+console.log(Boolean(String(0)));
+
+//OPERADORES BASICOS
+
+//operadores unarios y binarios
+let a,b, res
+a=5;
+b=2;
+res = a+b;
+res = a-b;
+res = a*b;
+res =a/b;
+res = a%b;//mood
+res =a**b;//potencia
+
+
+/*alert ('1' +2);//12
+alert (1+'2');//12
+alert(2+2+'1')//221
+alert ('1' +2+2)//41
+alert ('1'+2+2)//122
+alert (2-'1');//1
+alert('6'/'2');//3
+alert('6'/'2a');*/
+
+//operaciones unarias
+
+a = 1;
+console.log(-a);
+
+a=-1;
+console.log(-a);
+
+console.log(-true);
+console.log(-false);
+
+a="2";
+b="3";
+console.log(+a + +b);
+console.log(Number(a)+Number(b));
+
+//asignaciones
+a=2+3;
+a=b=c=2+3;
+c=2+3;
+b=ca=b;
+c=3-(a=b+1);
+
+//modificadores
+a=a+2;
+a+=2;
+a=a-2;
+a=a-2;
+a-=2;
+
+//incremento y decremento
+
+// ++ incermento
+//--decremento
+a=2;
+a++;
+console.log(a);//3
+
+a=2;
+a--;
+console.log(a);//1
+
+//posicion de incremento o decremento
+a=1;
+b= ++a;
+console.log(b);
+
+a=1
+b=a++;
+console.log(b);
+
+a=1
+b=a++;
+c=a;
+console.log(b);
+console.log(c);
+
+
 
 
 
