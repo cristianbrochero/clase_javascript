@@ -16,6 +16,7 @@ let b = 6;
 let suma =a + b;
 //console.log ("El resultado de la suma es: ", suma);
 b=7;
+
 //console.log(b);
 
 let nombre = "Cristian";
@@ -29,9 +30,11 @@ nombre2 = "carlos";
 nombreUno = "Cristian";
 nombreDos = "carlos";
 
+
 //nombrado underscore
 nombre_uno = "Cristian";
 nombre_dos = "carlos";
+
 
 //constantes
 
@@ -51,6 +54,7 @@ let mensaje = "Hola";
 mensaje = 1234;
 
 // tipo de dato (numero)
+
 
 let n=123;
 n=12.523;
@@ -266,6 +270,146 @@ console.log(b);
 console.log(c);
 
 
+// COMPARACIONES
+
+console.log(2>1); // true
+console.log(2==1 );//false
+console.log(2!=1); // true
+
+let resultado =2>1;
+
+
+//comparaciones entre cadenas
+
+console.log('Z' > 'A');//true
+console.log('Show'> 'show');//false
+console.log('casa' > 'casas');//false
+console.log('a' > 'A');
+
+//1. la letra minuscula es mayor que la mayuscula
+//2. la palabra con mayor letra es mayor que la de menos letra.
+
+
+//comparacion de diferentes tipos
+// al compara valores de diferentes tipos, JavaScript los convierte a numneros.
+//toda comparacion con NaN es falso
+
+console.log('****');
+console.log('2' > 1);//true
+console.log('01' == 1);//true
+console.log(true<0);//true
+console.log(false ==0);//true
+console.log('hola' > 0);//false
+console.log('hola < 0');//false
+console.log('hola' == 0); //false
+
+console.log('**********');
+
+a = 0;
+b = '0';
+Boolean_a = Boolean(a);//false
+Boolean_b = Boolean(b);//true
+
+console.log(a==b);//true
 
 
 
+5 > 4//true
+"apple" > "pineapple" // false
+"2" > "12"// true
+undefined == null // true
+undefined === null // false
+null =="0";//false
+null === +"0"//false
+
+
+// SENTENCIA IF
+//IF de linea
+if (4<5)console.log('Mensaje');
+if(4<5){
+    b= 5+3;
+    console.log('Mensaje');
+} 
+
+if ('45a'/3){
+    console.log('No entró');
+}
+
+if ('0'){
+    console.log('entró');
+}
+
+if ('4'/2){
+    console.log('entró');
+}
+
+if(1){
+    console.log('Entró o no entró?');
+}
+
+let (edadx)
+if(edad){
+    console.log('Variable definida');
+}else{
+    console.log('variable indefinida');
+}
+
+//haga un algoritmo que dado una edad imprima true si es mayor de edad
+//false si no lo es
+
+let (edad_usuario =17);
+if (edad_usuario >=18){
+    console.log(true);
+}else{
+    console.log(false);
+}
+console.log(edad_usuario >= 18);
+
+//operador ternario
+//condicion ? operacion verdadera : operacion falsa;
+resultado = edad_usuario >= 18 ? x=5: x=7;
+
+//operadores
+
+//OR
+/*
+v or v=v
+v or f=v
+f or v=v
+f or f=f
+*/
+console.log('***** operador or ******');
+console.log(true || true)//true
+console.log(true || false)//true
+console.log(false || true)//true
+console.log(false || false)//false
+
+
+if (4 == 4 || 2 > 5){
+    console.log('Verdadero');
+}
+
+//resultado = valor_uno || valor_dos || valor_tres
+//1. evalua los operando de izquiera a derecha
+//2. por cada operando, convierte el valor a booleano.Si el resultado es true.
+//se define y retorna el valor original de ese operando
+//3. si todos los valores operando han sido evaluados (todos eran falsos), retorna el ulñtimo operando.
+
+let comparacion_booleana = true || false || true;
+comparacion_booleana = '0' || '0';
+comparacion_booleana = undefined || null || NaN || '';// ''
+
+// prevelancia U orden entre OR y AND
+
+//a && b || c && d = (a && b) || (c && d)
+
+//negacion
+
+console.log(!true);//false
+console.log(!false);//true
+console.log(!!undefined);// false == Boolean (underfined)
+
+
+//Nullish o funcion de nulos
+a= null ?? undefined ?? undefined ?? null ?? "hola" ?? null ?? undefined//"hola"
+a= null ?? undefined ?? undefined ?? undefined ?? null ?? null ?? null;//null
