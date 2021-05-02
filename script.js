@@ -414,8 +414,8 @@ console.log(!!undefined);// false == Boolean (underfined)
 a= null ?? undefined ?? undefined ?? null ?? "hola" ?? null ?? undefined//"hola"
 a= null ?? undefined ?? undefined ?? undefined ?? null ?? null ?? null;//null
 
-
 /*
+
 // while condicion{
 //
 //}
@@ -497,3 +497,131 @@ principal: for(i=0;i<=10;i++){
    
 }
 console.log(´salio´);*/
+
+/*switch(valor):{
+    case valor1:
+        [break];
+        default:
+            [break];
+}
+*/
+
+a=2+2;
+switch(a){
+    case 3:
+        console.log('el resultado es 3');
+        break;
+        case 4:
+        console.log('el resultado es 4');
+        break;
+        default:
+        console.log('ninguno de los dos valores');
+        
+}
+
+// funciones
+/*
+function nombre([parametros]){
+
+}
+*/
+
+function saludar(){
+    console.log('hola mundo');
+}
+saludar();+
+function saludar_nombre(){
+    let nombre = 'Cristian';//variable local
+    console.log('hola ${nombre_xx}');
+
+}
+
+ console.log('hola ${nombre_xx}');
+ saludar_nombre();
+
+ //parametros
+ function mensaje (de, para){
+     console.log('${de}: ${texto}');
+
+ }
+mensaje ('Cristian', 'hola maria');
+mensaje ('maria', 'hola cristian');
+
+//parametros predeterminados
+function mensaje (de, para){
+    console.log('${de}: ${texto}');
+
+}
+mensaje ('Cristian');
+mensaje ('maria', 'hola cristian')
+function sumar(a,b){
+    return a+b;
+}
+console.log(sumar(4,5));
+console.log(sumar_dos(4,5));
+console.log(sumar_dos()== undefined);
+
+//HUF que devuelva la sumatoria de los numeros pares de 1 al x
+function sumatoria_apres(x){
+    sumatoria =0;
+    for(i=0;i<=x; i++){
+        if(es_par(x))sumatoria = sumatoria + i;
+        
+    }
+    return sumatoria;
+}
+function es_par(n){
+    return n % 2 == 0;
+}
+console.log(sumatoria_apres(10));
+
+
+//expresion y declaracion de una funcion
+
+//declarar una funcion
+
+function hola(){
+    console.log('hola mundo');
+}
+
+//exprecion de una funcion
+
+let hola = function(){
+    console.log('hola mundo');
+};
+console.log('hola_dos');
+
+// funciones flecha
+
+let hola_dos_flecha = () => console.log('hola mundo');
+
+let sumar_ex = function(a,b){
+    return a+b;
+
+}
+
+/*let sumar_ex_flecha = (a,b){
+    return a+b;
+}*/
+
+// creacion de una funcion de manera dinamica
+
+edad=15
+let saludo_edad = (edad > 18)?
+() => console.log('es mayor de edad'):
+() => console.log('es menor de edad');
+
+saludo_edad();
+
+
+//callback
+
+function decidir (pregunta, si, no){
+if (confirm(pregunta)) si()
+else no();
+}
+
+let si = () => console.log('la persona dijo que si');
+let no = () => console.log('la presona dijo no');
+
+decidir('estas interesado en aprender javascript?', si , no);
