@@ -413,3 +413,87 @@ console.log(!!undefined);// false == Boolean (underfined)
 //Nullish o funcion de nulos
 a= null ?? undefined ?? undefined ?? null ?? "hola" ?? null ?? undefined//"hola"
 a= null ?? undefined ?? undefined ?? undefined ?? null ?? null ?? null;//null
+
+
+/*
+// while condicion{
+//
+//}
+ let i=0;
+ while(i<=10){
+     console.log(´el valor de i es ${i}´);
+     i++;
+ }
+ i=10;
+ while(i<=10){
+    console.log(´el valor de i es ${i}´);
+    i--;
+}
+
+//do - while
+
+i=1
+do{
+console.log(´el valor de i es ${i}´);
+i++;
+}while(i<=10);
+
+    // ciclo for
+
+    for(i=0; i<=10; i++){
+        console.log(´el valor de i es ${i}´);
+    }
+
+
+// alcance de la variable
+
+for(let z=0; z<=10; z++){
+    console.log(´el valor de z es ${z}´);
+}
+console.log(´el valor de z es ${z}´);
+
+let w=0;
+for(let w=0; w<=10; w++){
+    console.log(´el valor de w es ${w}´);
+}
+console.log(´el valor de w es ${w}´);
+
+//saltado de partes
+w=0;
+for( w<=10){
+    console.log(´el valor de w es ${w++}´);
+}
+
+// break y continue
+
+while(1){
+    console.log(´el valor de w es ${w}´);
+    w++;
+    if (w==11) break;
+}
+
+for(i=1; i<=10; i++){
+    if (i%2 != 0);
+    console.log(´es un numero par´)
+}
+
+//etiqueta para break y continue
+for(i=0;i<=10;i++){
+    for(j=0;j<=10;j++){
+
+        console.log(´la suma de i+j es ${i+j}´);
+        if (j==2)break;
+    }
+    if(j==2)break;
+}
+console.log(´salio´);
+
+principal: for(i=0;i<=10;i++){
+    for(j=0;j<=10;j++){
+
+        console.log(´la suma de i+j es ${i+j}´);
+        if (j==2)break principal;
+    }
+   
+}
+console.log(´salio´);*/
